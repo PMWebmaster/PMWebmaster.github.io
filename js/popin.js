@@ -3,7 +3,7 @@ $(".close").click(closePop);
 $(window).click(function (eve){
   obj = eve.target;
 
-  if(!$(obj).hasClass("popin") && obj.id != "linkSoins" && obj.id != "linkPropos" && obj.id != "linkContact"){
+  if(obj.id == "backgroundPopin"){
     closePop();
   }
   else if (obj.id == "linkSoins"){
@@ -20,6 +20,8 @@ $(window).click(function (eve){
 function popSoins(){
   $("#popinSoins").removeClass("hidePopin");
   $("#popinSoins").addClass("showPopin");
+  $("#backgroundPopin").removeClass("hidePopin");
+  $("#backgroundPopin").addClass("showPopin");
 }
 
 function popPropos(){
@@ -39,4 +41,6 @@ function closePop(){
         $(this).addClass("hidePopin");
       }
     );
+    $("#backgroundPopin").removeClass("showPopin");
+    $("#backgroundPopin").addClass("hidePopin");
 }
