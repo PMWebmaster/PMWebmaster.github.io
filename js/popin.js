@@ -27,11 +27,15 @@ function popSoins(){
 function popPropos(){
   $("#popinPropos").removeClass("hidePopin");
   $("#popinPropos").addClass("showPopin");
+  $("#backgroundPopin").removeClass("hidePopin");
+  $("#backgroundPopin").addClass("showPopin");
 }
 
 function popContact(){
   $("#popinContact").removeClass("hidePopin");
   $("#popinContact").addClass("showPopin");
+  $("#backgroundPopin").removeClass("hidePopin");
+  $("#backgroundPopin").addClass("showPopin");
 }
 
 function closePop(){
