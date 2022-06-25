@@ -48,6 +48,7 @@ ul{
   padding-bottom: 10px;
   justify-content: space-around;
   position: relative;
+  flex-wrap: wrap;
 }
 
 ul::before{
@@ -157,4 +158,34 @@ li a:hover{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #background{
+    width: 100vw;
+    height: 60vh;
+    top: 0%;
+  }
+
+  h1{
+    padding: 0px;
+    font-size: 50px;
+  }
+
+  nav{
+    margin-top: 70px;
+  }
+
+  ul{
+    flex-direction: column;
+  }
+
+  li:first-child{
+    margin-top: 0px;
+  }
+
+  li{
+    margin-top: 20px;
+  }
+
 }
