@@ -81,6 +81,10 @@ li a:hover{
   color: grey;
 }
 
+p{
+  font-size: 20px;
+}
+
 .gras{
   font-weight: bold;
 }
@@ -128,6 +132,7 @@ li a:hover{
   padding-top: 7px;
   padding-right: 10px;
   transition: 0.3s;
+  font-size: 30px;
 }
 
 .close:hover{
