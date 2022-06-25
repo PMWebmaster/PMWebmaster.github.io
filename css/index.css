@@ -160,7 +160,7 @@ li a:hover{
   text-align: center;
 }
 
-@media screen and (max-width: 300px) {
+@media all and (max-device-width: 500px) {
   #background{
     width: 100vw;
     height: 60vh;
@@ -185,7 +185,7 @@ li a:hover{
   }
 
   li{
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
 }
